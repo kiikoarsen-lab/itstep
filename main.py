@@ -1,28 +1,15 @@
+import colorama
+from colorama import Fore
 
-class Cat:
-    def __init__(self, name, color, age):
-        self.name = name
-        self.color = color
-        self.age = age
-        self.hunger = 50
-        self.energy = 50
+colorama.init()
 
-    def eat(self):
-        self.hunger -= 20
-        print(self.name, "поїв")
+print("Назва:", colorama.__name__)
+print("Версія:", colorama.__version__)
 
-    def sleep(self):
-        self.energy += 20
-        print(self.name, "поспав")
+# Перегляд атрибутів і методів
+print(dir(colorama))
 
-
-cat1 = Cat("Мурчик", "сірий", age=2)
-
-print(cat1.name)
-print(cat1.color)
-print(cat1.age)
-
-cat1.eat()
-cat1.sleep()
-
-
+# Кольори тексту
+print(Fore.RED + "Червоний текст")
+print(Fore.GREEN + "Зелений текст")
+print(Fore.BLUE + "Синій текст")
