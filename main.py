@@ -1,15 +1,18 @@
-import colorama
-from colorama import Fore
+#import colorama
+#from colorama import Fore
 
-colorama.init()
+#Acolorama.init()
 
-print("Назва:", colorama.__name__)
-print("Версія:", colorama.__version__)
+#Aprint("Назва:", colorama.__name__)
+#print("Версія:", colorama.__version__)
 
 # Перегляд атрибутів і методів
-print(dir(colorama))
+#print(dir(colorama))
 
 # Кольори тексту
-print(Fore.RED + "Червоний текст")
-print(Fore.GREEN + "Зелений текст")
-print(Fore.BLUE + "Синій текст")
+#print(Fore.RED + "Червоний текст")
+#print(Fore.GREEN + "Зелений текст")
+#print(Fore.BLUE + "Синій текст")
+
+def add(a, b):
+    return a + b
